@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dossou Borice | Portfolio Data</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 scroll-smooth font-sans">
+    
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <span class="font-bold text-blue-400 text-xl tracking-tighter italic">DB.</span>
+        <div class="hidden md:flex gap-8 text-xs uppercase tracking-widest font-semibold text-slate-400">
+          <a href="#accueil" class="hover:text-blue-400 transition-colors">Accueil</a>
+          <a href="#formations" class="hover:text-blue-400 transition-colors">Formations</a>
+          <a href="#projets" class="hover:text-blue-400 transition-colors">Projets</a>
+          <a href="#experiences" class="hover:text-blue-400 transition-colors">Expériences</a>
+          <a href="#certifs" class="hover:text-blue-400 transition-colors">Certificats</a>
+          <a href="#contact" class="hover:text-blue-400 transition-colors font-bold text-blue-500">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="app" class="pt-16">
+      
+      <header id="accueil" class="min-h-[80vh] flex items-center justify-center px-6 border-b border-slate-900">
+        <div class="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12">
+          <div class="w-50 h-50 md:w-55 md:h-70 rounded-2xl overflow-hidden border-2 border-blue-500/20 shadow-2xl shrink-0">
+            <img src="/Identity.jpg" alt="Dossou Borice" class="w-full h-full object-cover">
+          </div>
+          <div class="text-center md:text-left">
+            <h1 class="text-5xl md:text-1xl font-black text-white mb-4 tracking-tighter uppercase">DOSSOU <span class="text-blue-500">BORICE</span></h1>
+            <p class="text-xl md:text-2xl text-slate-400 font-light mb-8 max-w-2xl leading-relaxed">
+              Bienvenue sur mon portfolio. Je transforme des données brutes en décisions stratégiques.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
+              <a href="#projets" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold transition-all shadow-lg shadow-blue-500/20">Voir mes projets</a>
+              <a href="#contact" class="px-8 py-4 border border-slate-700 hover:bg-slate-800 rounded-xl font-bold transition-all">Me contacter</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="formations" class="max-w-6xl mx-auto px-6 py-20 border-b border-slate-900">
+        <h2 class="text-3xl font-bold mb-12 text-white"><span class="text-blue-500 font-mono">01.</span> Formations</h2>
+        <div class="space-y-8">
+          <div class="relative pl-8 border-l-2 border-slate-800">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+            <h3 class="text-xl font-bold">Master Mathématiques Appliquées (Science des Données)</h3>
+            <p class="text-blue-400">Université Bretagne Sud (UBS), Vannes | 2023 - 2025</p>
+          </div>
+          <div class="relative pl-8 border-l-2 border-slate-800">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-700 rounded-full"></div>
+            <h3 class="text-xl font-bold">Licence MIASHS (Maths & Informatique)</h3>
+            <p class="text-blue-400">Université de Caen Normandie | 2022 - 2023</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="max-w-6xl mx-auto px-6 py-20 border-b border-slate-900">
+        <h2 class="text-3xl font-bold mb-12 text-white"><span class="text-blue-500 font-mono">02.</span> Projets Réalisés</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="workflow.png" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="n8n">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Agent IA Autonome (n8n)</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">Automatisation via OpenAI et Gmail.</p>
+              <a href="https://github.com/borice229/n8n-automatisation-AI/tree/main" class="text-blue-400 text-xs font-bold uppercase hover:underline">Voir GitHub </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="Sticker-2048w.png" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="NLP">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Analyse Sentiment Juridique</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">NLP déployé sur Hugging Face Spaces.</p>
+              <a href="https://huggingface.co/spaces/229Borice/camembert_classifier_proces?logs=container" class="text-blue-400 text-xs font-bold uppercase hover:underline">Hugging Face </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="fastip.png" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="FastAPI">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Pipeline MovieLens</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">API FastAPI & Interface Streamlit.</p>
+              <div class="flex gap-4">
+                <a href="https://github.com/borice229/movies_analystics?tab=readme-ov-file" class="text-blue-400 text-xs font-bold uppercase hover:underline">GitHub</a>
+                <a href="https://bmoviesanalystics-by-borice-doss.streamlit.app/" class="text-blue-400 text-xs font-bold uppercase hover:underline">Démo </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="assure.png" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="Assurance">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Simulateur Prime Assurance</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">Modélisation et Application Web.</p>
+              <div class="flex gap-4">
+                <a href="https://github.com/borice229/pet-insurance-pricing-model" class="text-blue-400 text-xs font-bold uppercase hover:underline">GitHub</a>
+                <a href="https://pet-insurance-pricing-model-1.onrender.com/" class="text-blue-400 text-xs font-bold uppercase hover:underline">Démo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="elmy.png" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="Elec">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Prévision Prix Électricité</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">Modèle Random Forest (Python).</p>
+              <a href="https://github.com/borice229/Challenge_data_Elmy" class="text-blue-400 text-xs font-bold uppercase hover:underline">Voir GitHub </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="bodacc.png" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="BODACC">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Extraction API BODACC</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">Talend (ETL) & Power BI Dashboard.</p>
+              <a href="https://github.com/borice229/TdB-procedures-collectives-BODACC" class="text-blue-400 text-xs font-bold uppercase hover:underline">Voir GitHub</a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="monlè.png" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="Shiny">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Application R Shiny Ventes</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">Prévision de ventes commerciales.</p>
+              <div class="flex gap-4">
+                <a href="https://github.com/borice229/Dashboard-R-Shiny-de-pr-vision-des-ventes" class="text-blue-400 text-xs font-bold uppercase hover:underline">GitHub</a>
+                <a href="https://df-borice.shinyapps.io/Forcast/" class="text-blue-400 text-xs font-bold uppercase hover:underline">Démo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="Sinistre.jpg" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="GLM">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Sinistres (LightGBM)</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">Modélisation de traitement dossiers.</p>
+              <a href="https://gitlab.etu.umontpellier.fr/e20240015500/projet_du_kbg/-/tree/Borice" class="text-blue-400 text-xs font-bold uppercase hover:underline">Voir GitLab </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden group">
+            <img src="OIP.jpg" class="h-40 w-full object-cover group-hover:scale-105 transition-transform" alt="Complex">
+            <div class="p-6">
+              <h3 class="font-bold mb-2">Phénomènes Complexes</h3>
+              <p class="text-sm text-slate-400 mb-4 font-light">Modélisation avancée et prédictions.</p>
+              <a href="https://github.com/borice229/Couplage_data" class="text-blue-400 text-xs font-bold uppercase hover:underline">Voir GitHub </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="experiences" class="max-w-6xl mx-auto px-6 py-20 border-b border-slate-900">
+        <h2 class="text-3xl font-bold mb-12 text-white"><span class="text-blue-500 font-mono">03.</span> Expériences</h2>
+        <div class="grid gap-12">
+          <div class="flex flex-col md:flex-row gap-4 md:gap-24">
+            <div class="text-blue-400 font-mono w-40">09/2024 — 08/2025</div>
+            <div>
+              <h3 class="text-xl font-bold">Ingénieur Data (Alternance)</h3>
+              <p class="text-slate-300">Direction du Numérique, Rennes</p>
+              <ul class="mt-4 text-slate-400 list-disc list-inside space-y-2 font-light">
+                <li>Restitution des données pour les besoins métiers.</li>
+                <li>Mise en place de flux ETL avec Talend.</li>
+                <li>Réalisation de dashboards Power BI.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-4 md:gap-24">
+            <div class="text-blue-400 font-mono w-40">02/2024 — 05/2024</div>
+            <div>
+              <h3 class="text-xl font-bold">Data Scientist (Stage)</h3>
+              <p class="text-slate-300">CCI Morbihan, Vannes</p>
+              <ul class="mt-4 text-slate-400 list-disc list-inside space-y-2 font-light">
+                <li>Identification d'écarts via programmation R.</li>
+                <li>Développement d'une application R Shiny.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifs" class="max-w-6xl mx-auto px-6 py-20 border-b border-slate-900">
+          <h2 class="text-3xl font-bold mb-12 text-white"><span class="text-blue-500 font-mono">04.</span> Certifications</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="https://www.udemy.com/certificate/UC-2a432886-9145-4855-a48c-2210ecfbb31e/" target="_blank" class="flex items-center gap-4 p-6 bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500 transition-all group">
+              <div class="p-3 bg-blue-500/10 rounded-lg text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                <i data-lucide="award"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Azure Data Engineering</h4>
+                <p class="text-xs text-slate-500 italic">Udemy Certification</p>
+              </div>
+            </a>
+            <a href="https://verify.skilljar.com/c/tomh8ra24ts8" target="_blank" class="flex items-center gap-4 p-6 bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500 transition-all group">
+              <div class="p-3 bg-blue-500/10 rounded-lg text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                <i data-lucide="award"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Dataiku Core Designer</h4>
+                <p class="text-xs text-slate-500 italic">Dataiku Academy</p>
+              </div>
+            </a>
+            <a href="https://www.coursera.org/account/accomplishments/verify/19ITV1L0BYIX" target="_blank" class="flex items-center gap-4 p-6 bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500 transition-all group">
+              <div class="p-3 bg-blue-500/10 rounded-lg text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                <i data-lucide="award"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">SQL for Data Science</h4>
+                <p class="text-xs text-slate-500 italic">Coursera</p>
+              </div>
+            </a>
+          </div>
+      </section>
+
+      <section id="contact" class="max-w-6xl mx-auto px-6 py-32 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-white uppercase tracking-tighter italic">contact <span class="text-blue-500"></span></h2>
+        <p class="text-slate-400 mb-12 max-w-lg mx-auto font-light leading-relaxed">
+          Je suis actuellement ouvert à de nouvelles opportunités en <span class="text-white">Data Analyst </span> et <span class="text-white">Data Science</span>.
+        </p>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+          <a href="mailto:boricefiacredossou@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition-colors">
+            <i data-lucide="mail"></i>
+            boricefiacredossou@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/boricedossou/" target="_blank" class="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition-colors">
+            <i data-lucide="linkedin"></i>
+            LinkedIn
+          </a>
+          <a href="https://github.com/borice229" target="_blank" class="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition-colors">
+            <i data-lucide="github"></i>
+            GitHub
+          </a>
+        </div>
+
+        <div class="mt-20 text-slate-600 text-[10px] uppercase tracking-widest font-bold">
+          Dossou Borice © 2026 • Fait avec passion
+        </div>
+      </section>
+
+    </div>
+    <script>lucide.createIcons();</script>
+  </body>
+</html>
